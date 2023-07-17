@@ -21,6 +21,7 @@ dataSources:
       abis:
         - name: Contract
           file: ./abis/Contract.json
+          
       eventHandlers:
         - event: Approval(indexed address,indexed address,indexed uint256)
           handler: handleApproval
@@ -55,6 +56,8 @@ dataSources:
       abis:
         - name: market
           file: ./abis/market.json
+        - name: Contract
+          file: ./abis/Contract.json
       eventHandlers:
         - event: AcceptedNFT(indexed address,indexed uint256,address,uint256,address,indexed
             address)
