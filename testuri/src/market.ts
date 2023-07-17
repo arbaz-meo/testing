@@ -172,10 +172,10 @@ export function handleListedNFT(event: ListedNFTEvent): void {
     activenft.blockNumber = event.block.number
     activenft.blockTimestamp = event.block.timestamp
     activenft.transactionHash = event.transaction.hash
-    // if(event.params.tokenId)
-    // {
-    //   activenft.contentURI = token_nft.tokenURI(event.params.tokenId)
-    // }
+    if(event.params.tokenId)
+    {
+      activenft.contentURI = token_nft.tokenURI(event.params.tokenId)
+    }
    
     activenft.isActive = true
     
